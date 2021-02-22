@@ -1,0 +1,55 @@
+.Bar {
+  background-color: var(--white);
+  color: var(--text-color-dark);
+  display: flex;
+  flex-direction: column reverse;
+  align-items: flex-end;
+
+  animation: morph 8s ease-in-out infinite;
+  
+  transition: all .3s ease-in-out;
+   z-index: 5;
+}
+
+@keyframes morph {
+  0% {
+			border-radius:  30% 10% 5% 40% / 30% 5% 40% 10%;
+		
+	} 
+ 
+	
+	50% {
+		border-radius:  5% 30% 40% 10% / 20% 30% 5% 30%;
+			
+	}
+  
+	100% {
+		border-radius:  30% 10% 5% 40% / 30% 5% 40% 10%;
+		
+	} 
+}
+
+.Bar__Text {
+  margin: 0 auto 0.25rem;
+}
+
+.Bar_sorted {
+  background-color: var(--primary);
+ 
+}
+
+.Bar_stateD {
+  background-color: rgb(77, 191, 236);
+}
+
+.Bar_stateC {
+  background-color: var(--red);
+}
+
+.Bar_stateB {
+  background-color: var(--secondary);
+}
+
+.Bar_stateA {
+  background-color: var(--amber);
+}
