@@ -115,7 +115,7 @@ class App extends Component {
   state = {
     //darkMode: false,
     array: [],
-    arraySize: 20,
+    arraySize: 5,
     trace: [],
     algorithm: null,
     appDrawerOpen: false
